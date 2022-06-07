@@ -1,47 +1,47 @@
 const paintingBudget = (areaToBePainted) => {
-  let litros = areaToBePainted / 6;
-  let lata = 0;
-  let galao = 0;
+  let liter = areaToBePainted / 6;
+  let tin = 0;
+  let gallon = 0;
 
-  if (litros > 14.4) {
+  if (liter > 14.4) {
     do {
-      lata++;
-      litros -= 18;
-    } while (litros > 18);
+      tin++;
+      liter -= 18;
+    } while (liter > 18);
 
-    if (litros > 0) {
-      for (galao; litros > 3.6; galao++) {
-        galao++;
-        litros -= 3.6;
+    if (liter > 0) {
+      for (gallon; liter > 3.6; gallon++) {
+        gallon++;
+        liter -= 3.6;
       }
-      if (litros > 0) {
-        galao++;
-        litros -= 3.6;
+      if (liter > 0) {
+        gallon++;
+        liter -= 3.6;
       }
     }
 
   } else {
-    for (galao; litros > 3.6; galao++) {
-      litros -= 3.6;
+    for (gallon; liter > 3.6; gallon++) {
+      liter -= 3.6;
     }
 
-    if(litros > 0) {
-      galao++
-      litros -= 3.6;
+    if(liter > 0) {
+      gallon++
+      liter -= 3.6;
     }
   }
 
-  litros = Math.abs(litros).toFixed(2);
-  const precoLatas = lata * 80;
-  const precoGalao = galao * 25;
-  const precoTotal = precoGalao + precoLatas;
+  liter = Math.abs(liter).toFixed(2);
+  const priceTin = tin * 80;
+  const priceGallon = gallon * 25;
+  const priceTotal = priceGallon + priceTin;
 
-  if (lata == 0) {
-    return `Será mais rentavel comprar apenas galões.\n${galao} galoe(s). Sobrará ${litros} litros, e lhe custará apenas ${precoTotal}`;
-  } else if (galao == 0) {
-    return `Será mais rentavel comprar apenas latas.\n${lata} lata(s). Sobrará ${litros} litros, e lhe custará apenas ${precoTotal}`;
+  if (tin == 0) {
+    return `Será mais rentavel comprar apenas galões.\n${gallon} galoe(s). Sobrará ${liter} litros, e lhe custará apenas ${priceTotal}`;
+  } else if (gallon == 0) {
+    return `Será mais rentavel comprar apenas latas.\n${lata} lata(s). Sobrará ${liter} litros, e lhe custará apenas ${priceTotal}`;
   } else {
-    return `Será mais rentavel comprar galões e latas.\n${galao} galoe(s) e ${lata} lata(s). Sobrará ${litros} litros, e lhe custará apenas ${precoTotal}`;
+    return `Será mais rentavel comprar galões e latas.\n${gallon} galoe(s) e ${lata} lata(s). Sobrará ${liter} litros, e lhe custará apenas ${precoTotal}`;
   }
 };
 
