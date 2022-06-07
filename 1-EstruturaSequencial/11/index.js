@@ -3,8 +3,6 @@ const rl = require("readline").createInterface({
   output: process.stdout
 });
 
-// fazer validações
-
 rl.question("Informe um numero inteiro: ", p => {
   const inteiro1 = parseFloat(p);
   rl.question("Informe outro numero inteiro: ", (p) => {
