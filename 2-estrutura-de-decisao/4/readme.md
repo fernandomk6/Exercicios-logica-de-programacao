@@ -1,2 +1,2 @@
-# 4
-Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+# Exercicio 4
+Faça um Programa que verifique se uma letra digitada é vogal ou consoante.  
