@@ -13,7 +13,7 @@ const downloadTime = (size, speed) => {
     seconds = Math.ceil(time * 60);
   }
 
-  return `Tempo estimado para download: ${minutes} minuto(s) e ${seconds} segundo(s)`;
+  return `Tempo estimado: ${minutes} minuto(s) e ${seconds} segundo(s)`;
 };
 
 console.log(downloadTime(size, speed));

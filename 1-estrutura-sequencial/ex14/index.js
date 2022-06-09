@@ -12,9 +12,9 @@ const overfishing = (kilogram) => {
   }
 }
 
-const dataFishing = overfishing(48)
-if (dataFishing) {
-  console.log(`KG em ecesso: ${dataFishing.excess}, Valor multa: ${dataFishing.fineAmount}`)
+const fishing = overfishing(48)
+if (fishing) {
+  console.log(`Excesso ${fishing.excess}, multa ${fishing.fineAmount}`)
 } else {
   console.log('Nenhum excesso encontrado')
 }

@@ -1,5 +1,14 @@
 const getDay = number => {
-  const dayOfTheWeek = [null, 'domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sabado'];
+  const dayOfTheWeek = [
+    null, 
+    'domingo', 
+    'segunda', 
+    'terça', 
+    'quarta', 
+    'quinta', 
+    'sexta', 
+    'sabado'
+  ];
   return dayOfTheWeek[number] || 'valor invalido';
 };
 

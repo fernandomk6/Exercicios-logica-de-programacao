@@ -1,5 +1,8 @@
 const verifyScore = (...scores) => {
-  const average = scores.reduce((accumulator, element) => accumulator += element, 0) / scores.length;
+  const average = 
+  scores.reduce((accumulator, element) => 
+  accumulator += element, 0) / scores.length;
+  
   let concept;
   let message;
 
