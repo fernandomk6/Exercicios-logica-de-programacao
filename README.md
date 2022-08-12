@@ -1,4 +1,4 @@
-# PythonBrasil Lista de exercicios
+# Lista de exercicios
 
 Lista de exercicios foi extraída do site [wiki.python.org.br](https://wiki.python.org.br/ListaDeExercicios)
 
@@ -21,4 +21,5 @@ Os exercícios estão divididos em categorias e procuram obedecer uma ordem de d
 
 Será criado nesse repositório uma pasta para cada tópico.  
 Dentro da pasta tópico, será criado uma pasta para cada exercício.  
-Dentro dela irá conter um arquivo readme.md, com a explicação do exercicio e também um arquivo JavaScript com a resposta. 
+Dentro dela irá conter um arquivo readme.md, com a explicação do exercicio e também um 
+arquivo JavaScript com a resposta. 
